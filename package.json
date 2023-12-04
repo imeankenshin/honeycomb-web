@@ -1,0 +1,67 @@
+{
+  "name": "web",
+  "scripts": {
+    "dev": "solid-start dev",
+    "build": "solid-start build",
+    "start": "solid-start start",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "format": "prettier --write . --ignore-path .gitignore"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^18.17.5",
+    "@typescript-eslint/parser": "^6.13.1",
+    "@vanilla-extract/vite-plugin": "^3.9.2",
+    "esbuild": "^0.14.54",
+    "eslint": "^8.55.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-solid": "^0.13.0",
+    "postcss": "^8.4.28",
+    "prettier": "^3.1.0",
+    "solid-start-node": "^0.3.10",
+    "typescript": "^4.9.5",
+    "unocss": "^0.57.7",
+    "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.0.8",
+    "@fontsource/ibm-plex-sans": "^5.0.17",
+    "@solidjs/meta": "^0.29.1",
+    "@solidjs/router": "^0.8.3",
+    "@unocss/reset": "^0.57.7",
+    "@vanilla-extract/css": "^1.14.0",
+    "clsx": "^2.0.0",
+    "solid-js": "^1.8.5",
+    "solid-start": "^0.3.10"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "solid",
+      "prettier"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:solid/recommended"
+    ],
+    "rules": {
+      "prettier/prettier": "warn"
+    }
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "none"
+  }
+}
