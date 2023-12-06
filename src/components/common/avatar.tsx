@@ -1,6 +1,7 @@
 import { JSX, Show } from "solid-js";
 import { getInitial } from "~/util/string";
 import { css } from "styled-system/css";
+import { square } from "styled-system/patterns";
 
 const avatar = css({
     display: "inline-grid",
@@ -11,23 +12,20 @@ const avatar = css({
     background: "red.400",
     objectFit: "cover"
   }),
-  smallSize = css({
+  smallSize = square({
     fontSize: "0.75rem",
-    borderRadius: "0.375rem",
-    width: "2rem",
-    height: "2rem"
+    borderRadius: "sm",
+    size: "2rem"
   }),
-  baseSize = css({
+  baseSize = square({
     fontSize: "1rem",
-    borderRadius: "0.625rem",
-    width: "2.5rem",
-    height: "2.5rem"
+    borderRadius: "md",
+    size: "2.5rem"
   }),
-  largeSize = css({
+  largeSize = square({
     fontSize: "1.5rem",
-    borderRadius: "0.75rem",
-    width: "3rem",
-    height: "3rem"
+    borderRadius: "lg",
+    size: "3rem"
   });
 
 type Props = {

@@ -38,7 +38,8 @@ export default function Root() {
         class={css({
           display: "flex",
           bgColor: "pantone.50",
-          minHeight: "100vh"
+          minHeight: "100vh",
+          fontFamily: "IBM Plex Sans, sans-serif"
         })}
       >
         <Suspense fallback={<p>Loading</p>}>

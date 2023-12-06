@@ -1,5 +1,7 @@
 import { A } from "solid-start";
-import { getInitial } from "~/util/string";
+import { flex } from "styled-system/patterns";
+import Avatar from "../common/avatar";
+import { css } from "styled-system/css";
 
 type Props = {
   name: string;
@@ -8,22 +10,61 @@ type Props = {
   id: string;
 };
 
+const rootStyle = flex({
+  display: "flex",
+  flexDirection: "column",
+  backgroundColor: "pantone.200",
+  outlineWidth: 1,
+  outlineStyle: "solid",
+  outlineColor: "pantone.300",
+  height: "16rem",
+  gap: 0,
+  width: "full",
+  maxWidth: "sm",
+  _hover: {
+    scale: 1.05
+  },
+  transition: "all",
+  borderRadius: "0.75rem"
+});
+
 export default function SpaceItem(props: Props) {
   return (
-    <article class="bg-warmGray-2 ring ring-warmGray-3 h-64 flex flex-col max-w-sm w-full hover:scale-105 transition rounded-3">
-      <A href={`/s/${props.id}`} class="flex h44 relative select-none">
+    <article class={rootStyle}>
+      <A
+        href={`/s/${props.id}`}
+        class={flex({ height: "11rem", position: "relative", userSelect: "none" })}
+      >
         <img
-          class="wfull hfull object-cover pointer-events-none rounded-t-3"
+          class={css({
+            width: "full",
+            height: "full",
+            objectFit: "cover",
+            pointerEvents: "none",
+            borderTopRadius: "0.75rem"
+          })}
           src={props.image || "/camp.png"}
           alt={`Wallpaper for ${props.name}`}
         />
-        <span class="absolute w-12 -bottom-3 border-4 border-solid border-warmGray-2 rounded-lg mx3 aspect-square grid place-items-center bg-red">
-          {getInitial(props.name)}
+        <span
+          class={css({
+            position: "absolute",
+            bottom: "-1.75rem",
+            borderWidth: "0.25rem",
+            borderStyle: "solid",
+            borderColor: "pantone.200",
+            borderRadius: "0.625rem",
+            margin: "0.75rem"
+          })}
+        >
+          <Avatar name={props.name} />
         </span>
       </A>
-      <div class="p4">
-        <h3 class="m0 text-base font-500">{props.name}</h3>
-        <p class="text-sm line-clamp-1 text-warmGray-5">{props.description}</p>
+      <div class={css({ p: "1rem" })}>
+        <h3 class={css({ fontWeight: 500 })}>{props.name}</h3>
+        <p class={css({ lineClamp: 1, color: "pantone.500", fontSize: "sm" })}>
+          {props.description}
+        </p>
       </div>
     </article>
   );

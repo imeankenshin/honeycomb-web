@@ -15,20 +15,40 @@ export default defineConfig({
     extend: {
       tokens: {
         colors: {
-          pantone: {
-            value: "pantone.400",
-            extensions: {
-              50: "#fafaf9",
-              100: "#f5f5f4",
-              200: "#e7e5e4",
-              300: "#d6d3d1",
-              400: "#a8a29e",
-              500: "#78716c",
-              600: "#57534e",
-              700: "#44403c",
-              800: "#292524",
-              900: "#1c1917"
-            }
+          ["pantone.50"]: {
+            value: "#fafaf9"
+          },
+          ["pantone.100"]: {
+            value: "#f5f5f4"
+          },
+          ["pantone.200"]: {
+            value: "#e7e5e4"
+          },
+          ["pantone.300"]: {
+            value: "#d6d3d1"
+          },
+          ["pantone.400"]: {
+            value: "#a8a29e"
+          },
+          ["pantone.500"]: {
+            value: "#78716c"
+          },
+          ["pantone.600"]: {
+            value: "#57534e"
+          },
+          ["pantone.700"]: {
+            value: "#44403c"
+          },
+          ["pantone.800"]: {
+            value: "#292524"
+          },
+          ["pantone.900"]: {
+            value: "#1c1917"
+          }
+        },
+        sizes: {
+          sm: {
+            value: "24rem"
           }
         }
       }
