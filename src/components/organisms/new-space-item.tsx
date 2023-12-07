@@ -1,10 +1,30 @@
+import { css } from "styled-system/css";
+import { styled } from "styled-system/jsx";
+
 export default function NewSpaceItem() {
   return (
-    <article class="border-dotted! border border-warmGray gap-2 flex justify-center items-center h-64 flex-col min-w-sm max-w-xs w-full transition rounded-3">
-      <span translate="no" class="material-symbols-rounded select-none">
+    <article
+      class={css({
+        borderWidth: 1,
+        borderStyle: "dotted",
+        borderColor: "pantone.400",
+        gap: "2",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "64",
+        flexFlow: "column",
+        minWidth: "sm",
+        maxWidth: "xs",
+        width: "full",
+        transition: "all",
+        borderRadius: "lg"
+      })}
+    >
+      <styled.span translate="no" class="material-symbols-rounded" userSelect="none">
         add
-      </span>
-      <span class="text-center">Add a new space</span>
+      </styled.span>
+      <styled.span textAlign="center">Add a new space</styled.span>
     </article>
   );
 }

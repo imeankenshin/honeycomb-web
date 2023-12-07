@@ -14,7 +14,6 @@ import {
 } from "solid-start";
 import SideBar from "./components/organisms/sidebar";
 import { UserProfileProvider } from "./contexts/user-profile";
-import "virtual:uno.css";
 import "@fontsource/ibm-plex-sans/400.css";
 import "@fontsource/ibm-plex-sans/500.css";
 import "@fontsource/ibm-plex-sans/700.css";

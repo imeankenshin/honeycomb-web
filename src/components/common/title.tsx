@@ -1,5 +1,7 @@
 import { Show, createSignal, onMount } from "solid-js";
 import { Title as _Title, useLocation } from "solid-start";
+import { css } from "styled-system/css";
+import { styled } from "styled-system/jsx";
 
 export default function Title(props: { children: string }) {
   const [isHidden, setIsHidden] = createSignal(true);
@@ -14,11 +16,28 @@ export default function Title(props: { children: string }) {
     <>
       <_Title>{/*@once*/ props.children} - Honeycomb</_Title>
       <nav
-        classList={{
-          "-translate-y-16": isHidden()
+        style={{
+          "--local-y": isHidden() ? "-4rem" : 0
         }}
         inert={isHidden()}
-        class="w-full flex items-center items-center -mb-8 top-0 left-0 justify-center p-4 shadow sticky transition bg-warmGray-50/90 backdrop-blur z-99"
+        class={css({
+          position: "sticky",
+          w: "full",
+          top: 0,
+          left: 0,
+          zIndex: 99,
+          opacity: 0.9,
+          bgColor: "pantone.100",
+          backdropFilter: "blur(16px)",
+          transform: "translateY(var(--local-y))",
+          padding: "1rem",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          marginBottom: "-4rem",
+          transition: "all",
+          shadow: "sm"
+        })}
       >
         <Show when={backLocation}>
           <a
@@ -28,11 +47,13 @@ export default function Title(props: { children: string }) {
             arrow_back
           </a>
         </Show>
-        <h2 class="w-full text-center font-500">{props.children}</h2>
+        <styled.h2 fontWeight={500} textAlign="center" w="full">
+          {props.children}
+        </styled.h2>
       </nav>
-      <h1 ref={navRef} class="text-6xl font-500 m-8">
+      <styled.h1 ref={navRef} textAlign="start" fontSize="6xl" fontWeight={500} m="8">
         {props.children}
-      </h1>
+      </styled.h1>
     </>
   );
 }

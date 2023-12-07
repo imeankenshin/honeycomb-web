@@ -41,7 +41,7 @@ export default function SpaceItem(props: Props) {
             height: "full",
             objectFit: "cover",
             pointerEvents: "none",
-            borderTopRadius: "0.75rem"
+            borderTopRadius: "lg"
           })}
           src={props.image || "/camp.png"}
           alt={`Wallpaper for ${props.name}`}
@@ -53,7 +53,7 @@ export default function SpaceItem(props: Props) {
             borderWidth: "0.25rem",
             borderStyle: "solid",
             borderColor: "pantone.200",
-            borderRadius: "0.625rem",
+            borderRadius: "lg",
             margin: "0.75rem"
           })}
         >
