@@ -1,4 +1,7 @@
+import clsx from "clsx";
 import { A, useMatch } from "solid-start";
+import { css } from "styled-system/css";
+import { styled } from "styled-system/jsx";
 
 type Props = {
   name: string;
@@ -11,16 +14,34 @@ export default function SidebarLi(props: Props) {
   return (
     <li data-match={Boolean(match())}>
       <A
-        class="flex group items-center gap-2  rounded-2 h-12"
+        class={clsx(
+          "group",
+          css({
+            display: "flex",
+            alignItems: "center",
+            gap: "0.5rem",
+            borderRadius: "sm",
+            height: "3rem"
+          })
+        )}
         href={props.href || props.name.toLowerCase()}
       >
         <span
           translate="no"
-          class="select-none group-hover:scale-110 transition material-symbols-rounded"
+          class={clsx(
+            "material-symbols-rounded",
+            css({
+              userSelect: "none",
+              transition: "all",
+              _groupHover: {
+                scale: 1.1
+              }
+            })
+          )}
         >
           {props.icon || props.name.toLowerCase()}
         </span>
-        <span class="text-base font-500">{props.name}</span>
+        <styled.span fontWeight={500}>{props.name}</styled.span>
       </A>
     </li>
   );

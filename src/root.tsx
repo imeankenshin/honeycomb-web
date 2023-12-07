@@ -14,14 +14,12 @@ import {
 } from "solid-start";
 import SideBar from "./components/organisms/sidebar";
 import { UserProfileProvider } from "./contexts/user-profile";
-import "virtual:uno.css";
-import "@unocss/reset/tailwind.css";
 import "@fontsource/ibm-plex-sans/400.css";
 import "@fontsource/ibm-plex-sans/500.css";
 import "@fontsource/ibm-plex-sans/700.css";
 import "@fontsource/ibm-plex-mono/400.css";
 import "./root.css";
-import "./theme/colors.css";
+import { css } from "styled-system/css";
 
 export default function Root() {
   return (
@@ -35,7 +33,14 @@ export default function Root() {
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"
         />
       </Head>
-      <Body>
+      <Body
+        class={css({
+          display: "flex",
+          bgColor: "pantone.50",
+          minHeight: "100vh",
+          fontFamily: "IBM Plex Sans, sans-serif"
+        })}
+      >
         <Suspense fallback={<p>Loading</p>}>
           <UserProfileProvider>
             <ErrorBoundary>
