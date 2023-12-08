@@ -5,7 +5,7 @@
     "dev": "solid-start dev",
     "build": "solid-start build",
     "start": "solid-start start",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "lint": "eslint --fix .",
     "format": "prettier --write ."
   },
   "type": "module",
@@ -15,9 +15,10 @@
     "@typescript-eslint/parser": "^6.13.1",
     "esbuild": "^0.14.54",
     "eslint": "^8.55.0",
-    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-solid": "^0.13.0",
+    "eslint-plugin-unicorn": "^49.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "postcss": "^8.4.28",
@@ -48,13 +49,21 @@
     "parser": "@typescript-eslint/parser",
     "plugins": [
       "solid",
-      "prettier"
+      "prettier",
+      "jsx-a11y",
+      "unicorn"
     ],
     "extends": [
       "eslint:recommended",
       "plugin:solid/recommended"
     ],
     "rules": {
+      "unicorn/filename-case": [
+        "error",
+        {
+          "case": "kebabCase"
+        }
+      ],
       "prettier/prettier": "warn"
     }
   },
