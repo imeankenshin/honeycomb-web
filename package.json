@@ -5,7 +5,7 @@
     "dev": "solid-start dev",
     "build": "solid-start build",
     "start": "solid-start start",
-    "lint": "eslint --fix .",
+    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write ."
   },
   "type": "module",
@@ -15,6 +15,7 @@
     "@typescript-eslint/parser": "^6.13.1",
     "esbuild": "^0.14.54",
     "eslint": "^8.55.0",
+    "eslint-config-next": "^14.0.4",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-solid": "^0.13.0",
@@ -55,7 +56,8 @@
     ],
     "extends": [
       "eslint:recommended",
-      "plugin:solid/recommended"
+      "plugin:solid/recommended",
+      "next/core-web-vitals"
     ],
     "rules": {
       "unicorn/filename-case": [
