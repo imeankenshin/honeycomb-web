@@ -1,0 +1,14 @@
+{
+  "env": {
+    "node": true
+  },
+  "plugins": ["cypress"],
+  "rules": {
+    "unicorn/filename-case": [
+      "error",
+      {
+        "case": "snakeCase"
+      }
+    ]
+  }
+}
