@@ -1,4 +1,4 @@
-import { createContext, useContext } from "solid-js";
+import { type JSX, createContext, useContext } from "solid-js";
 
 type UserStatus = "online" | "offline" | "idle";
 
@@ -14,7 +14,7 @@ const userProfileContext = createContext<UserProfileContextType>({
   image: "/icon.png"
 });
 
-export function UserProfileProvider(props: { children: any }) {
+export function UserProfileProvider(props: { children: JSX.Element }) {
   return (
     <userProfileContext.Provider value={{ name: "Beluga", image: "/icon.jpeg", status: "online" }}>
       {props.children}

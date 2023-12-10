@@ -116,7 +116,7 @@ export function TabPanel(props: TabContentProps) {
       style={props.style}
       role="tabpanel"
       id={`panel:${id}:${props.value}`}
-      aria-aria-labelledby={`tab:${id}:${props.value}`}
+      aria-labelledby={`tab:${id}:${props.value}`}
       hidden={selected() !== props.value}
       class={props.class}
     >
