@@ -6,6 +6,7 @@ import { styled } from "styled-system/jsx";
 export default function Title(props: { children: string }) {
   const [isHidden, setIsHidden] = createSignal(true);
   const backLocation = useLocation().pathname.split("/").slice(0, -1).join("/");
+  // eslint-disable-next-line prefer-const
   let navRef: HTMLHeadingElement | undefined = undefined;
   onMount(() => {
     document.getElementsByTagName("main")[0].addEventListener("scroll", () => {

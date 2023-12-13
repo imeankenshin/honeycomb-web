@@ -10,12 +10,8 @@
     "strict": true,
     "baseUrl": "./",
     "paths": {
-      "~/*": [
-        "./src/*"
-      ],
-      "styled-system/*": [
-        "./styled-system/*"
-      ],
+      "~/*": ["./src/*"],
+      "styled-system/*": ["./styled-system/*"]
     }
   }
 }

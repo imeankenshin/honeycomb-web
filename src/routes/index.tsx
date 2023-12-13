@@ -10,7 +10,7 @@ export default function Home() {
     <styled.main display="flex" flexDirection="column" gap={0} w="full" h="screen" overflowY="auto">
       <Title>Home</Title>
       <HStack flexWrap="wrap" mx="auto" p="8" pt="0" gap={4}>
-        <For each={spaces} fallback={<p>Its's so empty here.</p>}>
+        <For each={spaces} fallback={<p>It&apos;s so empty here.</p>}>
           {() => (
             <SpaceItem
               id="a"
