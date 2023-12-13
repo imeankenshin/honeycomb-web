@@ -25,7 +25,7 @@ dependencies:
     version: 1.8.5
   solid-start:
     specifier: ^0.3.10
-    version: 0.3.10(@solidjs/meta@0.29.1)(@solidjs/router@0.8.4)(solid-js@1.8.5)(solid-start-node@0.3.10)(vite@4.5.0)
+    version: 0.3.10(@solidjs/meta@0.29.1)(@solidjs/router@0.8.4)(solid-js@1.8.5)(solid-start-node@0.3.10)(vite@4.5.1)
 
 devDependencies:
   "@pandacss/dev":
@@ -81,13 +81,13 @@ devDependencies:
     version: 3.1.0
   solid-start-node:
     specifier: ^0.3.10
-    version: 0.3.10(solid-start@0.3.10)(vite@4.5.0)
+    version: 0.3.10(solid-start@0.3.10)(vite@4.5.1)
   typescript:
     specifier: ^4.9.5
     version: 4.9.5
   vite:
-    specifier: ^4.4.9
-    version: 4.5.0(@types/node@18.18.12)
+    specifier: ^4.5.1
+    version: 4.5.1(@types/node@18.18.12)
 
 packages:
   /@aashutoshrathi/word-wrap@1.2.6:
@@ -2367,13 +2367,13 @@ packages:
       autoprefixer: 10.4.15(postcss@8.4.31)
       hookable: 5.5.3
       lodash.merge: 4.6.2
-      postcss: 8.4.31
-      postcss-discard-duplicates: 6.0.0(postcss@8.4.31)
-      postcss-discard-empty: 6.0.0(postcss@8.4.31)
-      postcss-merge-rules: 6.0.1(postcss@8.4.31)
-      postcss-minify-selectors: 6.0.0(postcss@8.4.31)
-      postcss-nested: 6.0.1(postcss@8.4.31)
-      postcss-normalize-whitespace: 6.0.0(postcss@8.4.31)
+      postcss: 8.4.32
+      postcss-discard-duplicates: 6.0.0(postcss@8.4.32)
+      postcss-discard-empty: 6.0.0(postcss@8.4.32)
+      postcss-merge-rules: 6.0.1(postcss@8.4.32)
+      postcss-minify-selectors: 6.0.0(postcss@8.4.32)
+      postcss-nested: 6.0.1(postcss@8.4.32)
+      postcss-normalize-whitespace: 6.0.0(postcss@8.4.32)
       postcss-selector-parser: 6.0.13
       ts-pattern: 5.0.5
     dev: true
@@ -2439,7 +2439,7 @@ packages:
       lil-fp: 1.4.5
       outdent: 0.8.0
       pluralize: 8.0.0
-      postcss: 8.4.31
+      postcss: 8.4.32
       ts-pattern: 5.0.5
     dev: true
 
@@ -2493,7 +2493,7 @@ packages:
       pathe: 1.1.1
       pkg-types: 1.0.3
       pluralize: 8.0.0
-      postcss: 8.4.31
+      postcss: 8.4.32
       preferred-pm: 3.1.2
       prettier: 2.8.8
       ts-morph: 19.0.0
@@ -2532,8 +2532,9 @@ packages:
         integrity: sha512-ecTjhDyO5TSUGBnei8HvzNujuUEeh4IgCnYX0GHgZ8Rxzt7Mgg7Xh0KjFInyJNcnVRxxjwoy70O8FS7cpYXOfw==
       }
     dependencies:
-      "@pandacss/node": 0.20.1(typescript@4.9.5)
-      postcss: 8.4.31
+
+      '@pandacss/node': 0.20.1(typescript@4.9.5)
+      postcss: 8.4.32
     transitivePeerDependencies:
       - jsdom
       - typescript
@@ -3521,7 +3522,7 @@ packages:
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
-      postcss: 8.4.31
+      postcss: 8.4.32
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -4207,7 +4208,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      postcss: 8.4.31
+      postcss: 8.4.32
     dev: true
 
   /csstype@3.1.2:
@@ -7972,7 +7973,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      postcss: 8.4.31
+      postcss: 8.4.32
     dev: true
 
   /postcss-discard-empty@6.0.0(postcss@8.4.31):
@@ -7984,7 +7985,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      postcss: 8.4.31
+      postcss: 8.4.32
     dev: true
 
   /postcss-merge-rules@6.0.1(postcss@8.4.31):
@@ -7993,13 +7994,14 @@ packages:
         integrity: sha512-a4tlmJIQo9SCjcfiCcCMg/ZCEe0XTkl/xK0XHBs955GWg9xDX3NwP9pwZ78QUOWB8/0XCjZeJn98Dae0zg6AAw==
       }
     engines: { node: ^14 || ^16 || >=18.0 }
+
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
       browserslist: 4.22.1
       caniuse-api: 3.0.0
-      cssnano-utils: 4.0.0(postcss@8.4.31)
-      postcss: 8.4.31
+      cssnano-utils: 4.0.0(postcss@8.4.32)
+      postcss: 8.4.32
       postcss-selector-parser: 6.0.13
     dev: true
 
@@ -8012,7 +8014,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      postcss: 8.4.31
+      postcss: 8.4.32
       postcss-selector-parser: 6.0.13
     dev: true
 
@@ -8025,7 +8027,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.14
     dependencies:
-      postcss: 8.4.31
+      postcss: 8.4.32
       postcss-selector-parser: 6.0.13
     dev: true
 
@@ -8038,7 +8040,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      postcss: 8.4.31
+      postcss: 8.4.32
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -8070,6 +8072,7 @@ packages:
       nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: true
 
   /postcss@8.4.32:
     resolution:
@@ -8081,7 +8084,6 @@ packages:
       nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
-    dev: true
 
   /preferred-pm@3.1.2:
     resolution:
@@ -8800,9 +8802,9 @@ packages:
       polka: 1.0.0-next.22
       rollup: 3.29.4
       sirv: 2.0.3
-      solid-start: 0.3.10(@solidjs/meta@0.29.1)(@solidjs/router@0.8.4)(solid-js@1.8.5)(solid-start-node@0.3.10)(vite@4.5.0)
+      solid-start: 0.3.10(@solidjs/meta@0.29.1)(@solidjs/router@0.8.4)(solid-js@1.8.5)(solid-start-node@0.3.10)(vite@4.5.1)
       terser: 5.24.0
-      vite: 4.5.0(@types/node@18.18.12)
+      vite: 4.5.1(@types/node@18.18.12)
     transitivePeerDependencies:
       - supports-color
 
@@ -8874,12 +8876,12 @@ packages:
       set-cookie-parser: 2.6.0
       sirv: 2.0.3
       solid-js: 1.8.5
-      solid-start-node: 0.3.10(solid-start@0.3.10)(vite@4.5.0)
+      solid-start-node: 0.3.10(solid-start@0.3.10)(vite@4.5.1)
       terser: 5.24.0
       undici: 5.27.2
-      vite: 4.5.0(@types/node@18.18.12)
-      vite-plugin-inspect: 0.7.42(rollup@3.29.4)(vite@4.5.0)
-      vite-plugin-solid: 2.7.2(solid-js@1.8.5)(vite@4.5.0)
+      vite: 4.5.1(@types/node@18.18.12)
+      vite-plugin-inspect: 0.7.42(rollup@3.29.4)(vite@4.5.1)
+      vite-plugin-solid: 2.7.2(solid-js@1.8.5)(vite@4.5.1)
       wait-on: 6.0.1(debug@4.3.4)
     transitivePeerDependencies:
       - "@nuxt/kit"
@@ -9702,7 +9704,7 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       sirv: 2.0.3
-      vite: 4.5.0(@types/node@18.18.12)
+      vite: 4.5.1(@types/node@18.18.12)
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -9723,8 +9725,8 @@ packages:
       merge-anything: 5.1.7
       solid-js: 1.8.5
       solid-refresh: 0.5.3(solid-js@1.8.5)
-      vite: 4.5.0(@types/node@18.18.12)
-      vitefu: 0.2.5(vite@4.5.0)
+      vite: 4.5.1(@types/node@18.18.12)
+      vitefu: 0.2.5(vite@4.5.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -9761,7 +9763,7 @@ packages:
     dependencies:
       "@types/node": 18.18.12
       esbuild: 0.18.20
-      postcss: 8.4.31
+      postcss: 8.4.32
       rollup: 3.29.4
     optionalDependencies:
       fsevents: 2.3.3
@@ -9777,7 +9779,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.5.0(@types/node@18.18.12)
+      vite: 4.5.1(@types/node@18.18.12)
 
   /wait-on@6.0.1(debug@4.3.4):
     resolution:
