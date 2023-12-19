@@ -21,7 +21,7 @@ export default function SidebarProfile() {
             size: "0.75rem",
             outlineWidth: 2,
             outlineStyle: "solid",
-            outlineColor: "pantone.100",
+            outlineColor: "warmGray.100",
             borderRadius: "sm"
           })}
         />

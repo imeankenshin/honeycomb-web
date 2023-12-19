@@ -28,7 +28,7 @@ export default function Title(props: { children: string }) {
           left: 0,
           zIndex: 99,
           opacity: 0.9,
-          bgColor: "pantone.100",
+          bgColor: "warmGray.100",
           backdropFilter: "blur(16px)",
           transform: "translateY(var(--local-y))",
           padding: "1rem",

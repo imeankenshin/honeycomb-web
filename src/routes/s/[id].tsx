@@ -14,13 +14,13 @@ const tabStyle = css({
     gap: "2",
     fontWeight: 500,
     "&[aria-selected=true]": {
-      backgroundColor: "pantone.900",
-      color: "pantone.50"
+      backgroundColor: "warmGray.900",
+      color: "warmGray.50"
     },
     _focusVisible: {
       outlineWidth: 2,
       outlineStyle: "solid",
-      outlineColor: "pantone.900",
+      outlineColor: "warmGray.900",
       outlineOffset: 1
     },
     height: "10",
@@ -30,7 +30,7 @@ const tabStyle = css({
   tabPanelStyle = css({
     padding: "8",
     width: "full",
-    bgColor: "pantone.200",
+    bgColor: "warmGray.200",
     borderRadius: "lg"
   });
 
@@ -53,7 +53,7 @@ export default function Space() {
             gap: "2",
             w: "full",
             p: "1.5",
-            bg: "pantone.200",
+            bg: "warmGray.200",
             borderRadius: "xl"
           })}
         >

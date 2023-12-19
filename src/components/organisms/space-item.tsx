@@ -13,10 +13,10 @@ type Props = {
 const rootStyle = flex({
   display: "flex",
   flexDirection: "column",
-  backgroundColor: "pantone.200",
+  backgroundColor: "warmGray.200",
   outlineWidth: 1,
   outlineStyle: "solid",
-  outlineColor: "pantone.300",
+  outlineColor: "warmGray.300",
   height: "16rem",
   gap: 0,
   width: "full",
@@ -52,7 +52,7 @@ export default function SpaceItem(props: Props) {
             bottom: "-1.75rem",
             borderWidth: "0.25rem",
             borderStyle: "solid",
-            borderColor: "pantone.200",
+            borderColor: "warmGray.200",
             borderRadius: "lg",
             margin: "0.75rem"
           })}
@@ -62,7 +62,7 @@ export default function SpaceItem(props: Props) {
       </A>
       <div class={css({ p: "1rem" })}>
         <h3 class={css({ fontWeight: 500 })}>{props.name}</h3>
-        <p class={css({ lineClamp: 1, color: "pantone.500", fontSize: "sm" })}>
+        <p class={css({ lineClamp: 1, color: "warmGray.500", fontSize: "sm" })}>
           {props.description}
         </p>
       </div>

@@ -12,7 +12,7 @@ export default function Skeleton(props: Props) {
       animationDuration="1s"
       animationIterationCount="infinite"
       animationTimingFunction="ease-in-out"
-      bgColor="pantone.300"
+      bgColor="warmGray.300"
       borderRadius="lg"
     />
   );
