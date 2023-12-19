@@ -12,16 +12,21 @@ type Props = {
 export default function SidebarLi(props: Props) {
   const match = useMatch(() => props.href || props.name.toLowerCase());
   return (
-    <li data-match={Boolean(match())}>
+    <li >
       <A
+        data-match={typeof match() !== "undefined"}
         class={clsx(
           "group",
           css({
             display: "flex",
+            px: "2",
             alignItems: "center",
-            gap: "0.5rem",
-            borderRadius: "sm",
-            height: "3rem"
+            gap: "2",
+            borderRadius: "lg",
+            height: "2.5rem",
+            "&[data-match=true]": {
+              backgroundColor: "warmGray.300"
+            }
           })
         )}
         href={props.href || props.name.toLowerCase()}
