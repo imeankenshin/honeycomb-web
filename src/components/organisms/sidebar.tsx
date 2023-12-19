@@ -12,11 +12,11 @@ export default function SideBar() {
         },
         direction: "column",
         w: "sm",
-        backgroundColor: "pantone.100",
+        backgroundColor: "warmGray.100",
         borderWidth: 1,
         borderStyle: "solid",
         padding: "1.5rem",
-        borderColor: "pantone.200"
+        borderColor: "warmGray.200"
       })}
     >
       <styled.ul h="full">
@@ -24,7 +24,7 @@ export default function SideBar() {
         <SidebarLi name="Direct Message" icon="forum" href="/dm" />
         <SidebarLi name="Bookmark" />
         <SidebarLi name="Notifications" icon="inbox" />
-        <styled.hr borderColor="pantone.200" my="2" />
+        <styled.hr borderColor="warmGray.200" my="2" />
         <SidebarLi name="Todos" icon="checklist" />
         <SidebarLi name="Schedule" icon="event" />
       </styled.ul>

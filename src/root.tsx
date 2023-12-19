@@ -36,7 +36,7 @@ export default function Root() {
       <Body
         class={css({
           display: "flex",
-          bgColor: "pantone.50",
+          bgColor: "warmGray.50",
           minHeight: "100vh",
           fontFamily: "IBM Plex Sans, sans-serif"
         })}

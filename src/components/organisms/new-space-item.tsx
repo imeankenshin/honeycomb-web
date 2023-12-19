@@ -7,7 +7,7 @@ export default function NewSpaceItem() {
       class={css({
         borderWidth: 1,
         borderStyle: "dotted",
-        borderColor: "pantone.400",
+        borderColor: "warmGray.400",
         gap: "2",
         display: "flex",
         justifyContent: "center",
