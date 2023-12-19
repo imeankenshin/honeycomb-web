@@ -14,7 +14,7 @@ export default function SideBar() {
         flexDirection: "column",
         w: "full",
         maxWidth: "xs",
-        padding: "1.5rem",
+        p: "4",
       })}
     >
       <styled.ul h="full">
