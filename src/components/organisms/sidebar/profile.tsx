@@ -15,14 +15,22 @@ export default function SidebarProfile() {
           role="status"
           class={square({
             position: "absolute",
-            bottom: "-0.25rem",
-            right: "-0.25rem",
-            backgroundColor: "violet.500",
-            size: "0.75rem",
+            bottom: "-0.5",
+            right: "-0.5",
+            size: "3",
             outlineWidth: 2,
             outlineStyle: "solid",
             outlineColor: "warmGray.100",
-            borderRadius: "sm"
+            borderRadius: "sm",
+            "&[data-status=online]": {
+              backgroundColor: "violet.500"
+            },
+            "&[data-status=offline]": {
+              backgroundColor: "warmGray.500"
+            },
+            "&[data-status=idle]": {
+              backgroundColor: "yellow.500"
+            }
           })}
         />
       </Flex>
